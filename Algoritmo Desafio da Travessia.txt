@@ -1,0 +1,33 @@
+Algoritmo "Desafio da Travessia"
+
+Var
+
+String cabra = "1"
+String lobo = "2"
+String couve = "3"
+Resposta = string
+
+Inicio
+Escreva("Um fazendeiro precisa levar um lobo, uma cabra e um maço de couve para o outro lado do rio. Ele tem um barco que só permite levar ele e mais um item. (Pular linha \n)")
+
+Escreva("Regras: Se o lobo ficar sozinho com a cabra, ele a come. Se a cabra ficar sozinha com a couve, ela a come. (Pular linha \n) ")
+
+Escreva ("Escolha quem deve ir primeiro na travessia: Cabra (Digite "1"), Lobo (Digite "2") e Couve (Digite "3")
+Leia(Resposta)
+
+   Se (Resposte = 1) entao
+      Escreva("Conseguiu realizar a primeira travessia em segurança. Portanto, todo o restante foi feito com sucesso!!!")
+   Senao
+      Escreva("A primeira travessia não foi realizada com segurança. Portanto, todo o restante foi um fracasso.")
+   FimSe
+
+FimAlgoritmo
+
+
+TESTE
+
+  Escolha   Resultado
+  -------  -----------
+  1         Sucesso
+  2         Erro
+  3         Erro
