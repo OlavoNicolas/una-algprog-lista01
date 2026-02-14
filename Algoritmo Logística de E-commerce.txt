@@ -85,7 +85,8 @@ TESTE
 
   Escolha   Resultado
   -------  -----------
-  Amazon     +1
-  limiteOK   +1
-
-FreteGrátis  +1
+  Amazon       +1
+  limiteOK     +1
+  FreteGrátis  +1
+ ------------------
+  Nota          3
