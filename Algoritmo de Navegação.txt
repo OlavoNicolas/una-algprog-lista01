@@ -1,0 +1,62 @@
+Algoritmo de "Navegação"
+
+Var
+
+RespostaDistancia = string
+RespostaClima = string
+RespostaAndar = 0
+RespostaChegada = string
+
+Inicio
+Escreva("Você está em sua localização atual e precisa chegar à Estação de Metrô Novo Eldorado para não perder o horário da aula. (Pular linha \n)")
+
+Escreva("Decisões: Se a distância for menor que 1km, vá a pé,Se estiver chovendo, utilize um transporte por aplicativo, e o algoritmo só termina quando você atravessar a catraca da estação. (Pular linha \n)")
+
+Escreva ("Está chovendo? (S ou N)")
+Leia(RespostaClima)
+
+   Se (RespostaClima = S) entao
+      Escreva("Utilize o transporte por APP")
+
+   Senao
+      Escreva("Dependendo da distância você poderá ir andando")
+	RespostaAndar = RespostaAndar + 1
+FimSe
+
+
+Escreva ("A estação está a mais de 1KM de distância? (S ou N)")
+Leia(RespostaDistancia)
+
+   Se (RespostaDistancia = N && RespostaAndar = 1) entao
+      
+      Escreva("Pode ir andando!")
+
+
+   Senao
+      Escreva("Utilize um transporte por APP!")
+	
+FimSe
+
+Escreva ("Chegou na estação?" (S ou N) )
+Leia(RespostaChegada)
+
+   Se (RespostaChegada = S) entao
+      Escreva("Operação concluída!")
+	
+
+   Senao
+      
+      Escreva("Voltando operação!")
+      RepetirALG
+
+
+FimAlgoritmo
+
+
+TESTE
+
+  Escolha   Resultado
+  -------  -------------------------
+  Clima       N (Pode ir andando)
+  Distância   N (Deve ir andando)
+  Chegada     S (Operação concluída)
