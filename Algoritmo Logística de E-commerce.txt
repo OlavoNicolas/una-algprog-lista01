@@ -5,7 +5,7 @@ saldo = inteiro
 preço = inteiro
 frete = String
 prazo = String
-Nota = inteiro
+Nota = 0
 
 RespostaLoja = string
 RespostaCreditoDisponivel = inteiro 
@@ -87,4 +87,5 @@ TESTE
   -------  -----------
   Amazon     +1
   limiteOK   +1
+
 FreteGrátis  +1
